@@ -98,7 +98,7 @@ console.log(array); // 输出: [1, 2, 3, 4]
 document.getElementById('myDiv').innerText = 'Hello World';
 ```
 
-### 总结
+总结
 JavaScript 中的大部分基本操作，包括变量声明和赋值、函数调用、循环、条件判断、异常处理、对象属性访问和方法调用、数组操作以及 DOM 操作等，都是同步任务。这意味着这些任务会按顺序逐行执行，每个任务都必须在继续执行下一个任务之前完成。
 
 <h3>微任务有哪些</h3>

@@ -163,8 +163,11 @@ async1 end
 promise4
 apple end again
 </div>
+更多例子可以看
+https://juejin.cn/post/7362456149658026024?searchId=20240701222243237F22DC52C5C9233E5D
 
 <h2>什么是线程、进程</h2>
+
 
 js的执行环境是浏览器或者Node.js。浏览器和node.js中涉及到线程、进程的概念。
 进程是操作系统资源分配的基本单位，线程是CPU调度的基本单位。

@@ -152,7 +152,8 @@ async function apple(){
 }
 apple()
 ```
-apple start
+<div>
+  apple start
 async1 start
 apple end
 async4 start
@@ -161,6 +162,8 @@ promise2
 async1 end
 promise4
 apple end again
+</div>
+
 <h2>什么是线程、进程</h2>
 
 js的执行环境是浏览器或者Node.js。浏览器和node.js中涉及到线程、进程的概念。

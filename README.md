@@ -121,6 +121,7 @@ queueMicrotask()
 setTimeout 和 **setInterval**：这些定时器函数会将回调函数添加到宏任务队列中。
 I/O操作：例如从服务器获取数据的网络请求。
 事件处理程序：用户交互事件（如点击、输入等）的处理程序也是宏任务。
+
 ```javascript
 setTimeout(() => {
     console.log('setTimeout')
@@ -150,7 +151,6 @@ async function apple(){
   console.log('apple end again');
 }
 apple()
-
 ```
 
 <h2>什么是线程、进程</h2>

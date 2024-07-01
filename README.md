@@ -121,6 +121,38 @@ queueMicrotask()
 setTimeout 和 **setInterval**：这些定时器函数会将回调函数添加到宏任务队列中。
 I/O操作：例如从服务器获取数据的网络请求。
 事件处理程序：用户交互事件（如点击、输入等）的处理程序也是宏任务。
+```javascript
+setTimeout(() => {
+    console.log('setTimeout')
+},0)
+async function async1(){
+    console.log('async1 start')
+    await async2()
+    console.log('async1 end')
+}
+function async2(){
+    Promise.resolve().then(()=>{
+        console.log('promise2')
+    })
+}
+function async4(){
+    console.log('async4 start')
+    Promise.resolve().then(()=>{
+        console.log('promise4')
+    })
+    console.log('async4 end')
+}
+async function apple(){
+  console.log('apple start');
+  async1()
+  console.log('apple end');
+  await async4()
+  console.log('apple end again');
+}
+apple()
+
+```
+
 <h2>什么是线程、进程</h2>
 
 js的执行环境是浏览器或者Node.js。浏览器和node.js中涉及到线程、进程的概念。
